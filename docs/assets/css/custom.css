@@ -1,0 +1,33 @@
+#sidebarbrand{
+  filter: gray;
+}
+
+#profilepic {
+    float: left;
+}
+#profilediv{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+.img-hover-zoom {
+    /* height: 100px; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    filter: brightness(100%);
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease, filter 0.5s ease-in-out;
+    filter: brightness(100%);
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    filter: brightness(300%);
+    transform: scale(1.2);
+  }
